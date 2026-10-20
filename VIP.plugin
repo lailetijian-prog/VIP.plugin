@@ -1,0 +1,41 @@
+#!name=VIP 解锁合集
+#!desc=单词鸭、疯狂背单词、Cake、口语星球、lispod、薄荷、读手表、星空外语、你推、多背单词、有道词典
+#!author=合集定制
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/VIP.png
+
+[Script]
+# 单词鸭 VIP
+http-response ^https:\/\/zhcn\.api\.wordln\.com\/tomato-word script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/dcy.js, requires-body=true, timeout=10, tag=单词鸭VIP
+
+# 疯狂背单词 VIP
+http-response ^https?:\/\/api\.fengkuangapp\.com\/account\/grant\/detail\/info\/ script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/fkbdc.js, requires-body=true, timeout=10, tag=疯狂背单词VIP
+
+# Cake VIP
+http-response ^https:\/\/api\.mycake\.me\/app\/start script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/cake.js, requires-body=true, timeout=10, tag=CakeVIP
+
+# 口语星球 VIP
+http-response ^https?:\/\/mapi\.kouyuxingqiu\.com\/api\/v2 script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/kyxq.js, requires-body=true, timeout=10, tag=口语星球VIP
+
+# lispod VIP
+http-response ^https:\/\/api\.lispod\.cn\/api\/User\/CurrentUser script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/lispod.js, requires-body=true, timeout=10, tag=lispodVIP
+
+# 薄荷 VIP
+http-response ^https://du\.baicizhan\.com script-path=https://cdn.jsdelivr.net/gh/liul0ng/quanx@refs/heads/main/bohe.js, requires-body=true, timeout=10, tag=薄荷VIP
+
+# 读手表 insight ProMax
+http-response ^https?:\/\/watch\.taotiangou\.cn\/prod-api\/watch\/insight\/userInfo script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/insight.js, requires-body=true, timeout=10, tag=读手表insight
+
+# 星空外语 VIP
+http-response ^https:\/\/api\.skyai\.tech\/user\/profile script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/xkwy.js, requires-body=true, timeout=10, tag=星空外语VIP
+
+# 你推陪你背单词 VIP
+http-response ^https:\/\/api\.mimuapp\.com\/v2\/fm\/userInfo script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/mimu.js, requires-body=true, timeout=10, tag=你推VIP
+
+# 多背单词 VIP
+http-response ^http:\/\/www\.duobeidanci\.com\/MobileDevice script-path=https://raw.githubusercontent.com/WeiGiegie/666/main/dbdc.js, requires-body=true, timeout=10, tag=多背单词VIP
+
+# 有道词典 VIP
+http-response ^https:\/\/dict\.youdao\.com\/vip\/user\/status script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/wyydcd.js, requires-body=true, timeout=10, tag=有道词典VIP
+
+[MITM]
+hostname = zhcn.api.wordln.com, api.fengkuangapp.com, api.mycake.me, mapi.kouyuxingqiu.com, api.lispod.cn, du.baicizhan.com, watch.taotiangou.cn, api.skyai.tech, api.mimuapp.com, www.duobeidanci.com, dict.youdao.com
